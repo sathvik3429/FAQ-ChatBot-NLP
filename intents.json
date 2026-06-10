@@ -1,0 +1,59 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "howdy", "what's up", "sup"],
+      "responses": ["Hello! How can I help you today?", "Hi there! What can I assist you with?", "Hey! Ask me anything."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "later", "take care", "exit", "quit"],
+      "responses": ["Goodbye! Have a great day!", "See you later!", "Take care!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "that's helpful", "cheers", "appreciate it"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["what are your hours", "when are you open", "opening hours", "working hours", "timings", "what time do you open", "are you open"],
+      "responses": ["We are open Monday to Friday, 9 AM to 6 PM IST.", "Our working hours are 9 AM – 6 PM, Mon–Fri."]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["how do I contact you", "contact details", "email", "phone number", "reach you", "get in touch", "support"],
+      "responses": ["You can reach us at support@example.com or call +91-9999999999.", "Email us at support@example.com — we respond within 24 hours."]
+    },
+    {
+      "tag": "pricing",
+      "patterns": ["how much does it cost", "pricing", "price", "fee", "charges", "how much", "cost"],
+      "responses": ["Our pricing starts at ₹999/month. Visit our website for full pricing details.", "We offer flexible plans starting at ₹999/month."]
+    },
+    {
+      "tag": "refund",
+      "patterns": ["refund", "money back", "cancel subscription", "get my money back", "return policy"],
+      "responses": ["We offer a 7-day money-back guarantee. Contact support@example.com to initiate a refund.", "Refunds are processed within 5–7 business days."]
+    },
+    {
+      "tag": "features",
+      "patterns": ["what can you do", "features", "capabilities", "what do you offer", "services", "tell me about your product"],
+      "responses": ["We offer smart automation, analytics dashboards, team collaboration tools, and 24/7 support.", "Our platform includes task management, reporting, integrations, and live chat support."]
+    },
+    {
+      "tag": "account",
+      "patterns": ["create account", "sign up", "register", "how to get started", "new account", "join"],
+      "responses": ["You can sign up at our website — it takes less than 2 minutes!", "Click 'Sign Up' on our homepage to create a free account."]
+    },
+    {
+      "tag": "password",
+      "patterns": ["forgot password", "reset password", "change password", "can't login", "lost password"],
+      "responses": ["Click 'Forgot Password' on the login page and we'll send a reset link to your email.", "You can reset your password from the login screen. Check your email for the reset link."]
+    },
+    {
+      "tag": "about",
+      "patterns": ["who are you", "what is this", "about you", "tell me about yourself", "what are you"],
+      "responses": ["I'm a smart FAQ chatbot built with Python and NLP. I'm here to answer your questions instantly!", "I'm an AI-powered assistant designed to help you find answers quickly."]
+    }
+  ]
+}
