@@ -1,13 +1,6 @@
-"""
-app.py
-Flask web server for the FAQ Chatbot.
-Run: python app.py
-Then open: http://localhost:5000
-"""
-
+import os
 from flask import Flask, request, jsonify, render_template
 from chatbot_engine import IntentClassifier
-import os
 
 app = Flask(__name__)
 bot = IntentClassifier("intents.json")
@@ -27,11 +20,9 @@ def chat():
 
 @app.route("/intents", methods=["GET"])
 def get_intents():
-    """Returns list of available intent tags — useful for debugging."""
     tags = [i["tag"] for i in bot.intents]
     return jsonify({"intents": tags, "count": len(tags)})
 
 if __name__ == "__main__":
-    print("Starting FAQ Chatbot server...")
-    print("Open http://localhost:5000 in your browser\n")
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
